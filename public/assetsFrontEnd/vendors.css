@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    font-family: arial;
+} */
+
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
+
+.vendors-product-page{
+    margin: 250px auto auto auto;
+    width: 50%; 
+    border-radius: 10px;
+    box-shadow: 1rem 1rem 4rem #333;
+    height: 500px;
+    background-color: #ffd1c7;
+    text-align: center;
+}
+
+.vendors-product-page h1{
+    font-weight: bold;
+}
+
+.Vendor0{
+    display: grid;
+    margin-top: 29px;
+}
+
+.Vendor0 label{
+    margin-top: 8px;
+    /* margin-right: 15px; */
+}
+.Vendor0 input{
+    margin: auto;
+    border-radius: 8px;
+    width: 10%;
+    margin-top: 8px;
+    /* margin-right: 34px; */
+}
+
+.Vendor3{
+    margin-top: 60px;
+}
+
+.Vendor3 h2{
+    margin-bottom: 20px;
+}
+
+.Ddetails{
+    display: flex;
+}
+
+.Ddetails label{
+    margin-top: 8px;
+    /* margin-right: 15px; */
+}
+.Ddetails input{
+    border-radius: 8px;
+    margin-top: 8px;
+    /* margin-right: 34px; */
+}
+
+.Ddetails input::placeholder{
+    text-align: center;
+}
+
+#Ssubmit{
+    background-color: #f1a593;
+    border: 2px solid #f1a593;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    padding: 10px;
+    float: right;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+#Ssubmit:hover{
+    color: #fff;
+    font-weight: bold;
+}

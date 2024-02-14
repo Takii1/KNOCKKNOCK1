@@ -1,0 +1,293 @@
+:root {
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.329);
+  --black: #222;
+  --maincolor: #f1a593;
+  --secondcolor: #ffd1c7;
+  --text-black: #333;
+  --small-font-size: 16px;
+  --whitecolor: #fffdfe;
+  --icon-size: 20px;
+  --header-padding: 16px;
+  --font-color: #333;
+  --m-font-size: 18px;
+  --btn-bg-color: #1e73be;
+  --hero-h1: 43px;
+}
+
+._111 {
+  border: 2px solid;
+  border-radius: 20px;
+  width: 35%;
+  margin: auto auto 14px auto !important;
+}
+
+._112 {
+  padding-top:9px;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.849);
+}
+
+._112 sub{
+  margin-right: 15px;
+  position: unset;
+  font-size: 18px;
+}
+
+._113 {
+  margin: 14px auto 14px auto;
+  align-items: center;
+  text-align: center;
+  color: var(--font-color);
+  width: 100% !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+.cal-container * {
+  margin: 0;
+}
+
+.cal-container {
+  padding: 16px;
+  border: 1px solid var(--secondcolor);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  -webkit-box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.1);
+  background: var(--secondcolor);
+  width: 210px;
+  left: 693.922px;
+  top: 543.234px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 5;
+  -webkit-animation-name: fadeUp;
+  animation-name: fadeUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  --col-dark: #1c2024;
+  --col-dark-light: #23282d;
+  --col-light: #f4f4f4;
+  --col-gray: #c4c4c4;
+  --col-dark-blue: #2c3e50;
+  --col-light-blue: rgb(214, 234, 248);
+}
+
+@-webkit-keyframes fadeUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cal-container * {
+  color: #333;
+}
+
+.cal-row {
+  width: 100%;
+}
+
+.cal-header {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cal-select-container {
+  cursor: pointer;
+  position: relative;
+}
+
+.cal-nav {
+  background: none;
+  border: none;
+  color: var(--text-black);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 0;
+  padding: 0;
+  outline: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.nav-prev {
+  margin-right: 12px;
+}
+
+.cal-hide {
+  display: none;
+}
+
+.cal-table {
+  position: relative;
+  -webkit-animation-name: slideLeft;
+  animation-name: slideLeft;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    left: 128px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    left: 128px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.cal-head-table {
+  padding: 8px 24px;
+}
+
+.cal-row-table > th,
+.cal-row-table > td {
+  padding: 2px 6px;
+  text-align: center;
+}
+
+.cal-row-table > .cal-month-td {
+  padding: 2px 2px;
+  font-size: 12px;
+}
+
+.cal-row-table > td {
+  cursor: pointer;
+  height: 28px;
+}
+
+
+input[name="year-input"] {
+  width: 148px;
+  border: 1px solid var(--maincolor);
+  border-radius: 10rem;
+  padding: 4px 8px;
+  line-height: 1.2;
+  font-size: 12px;
+}
+
+.cal-btn-select-year {
+  text-align: center;
+  padding: 4px 8px;
+  outline: none;
+  border: 1px solid var(--maincolor);
+  background-color: var(--maincolor);
+  color: #fff;
+  border-radius: 0.7rem;
+}
+
+td.cal-current-date,
+td.cal-current-year,
+td.cal-current-month {
+  border: 1px solid var(--secondcolor);
+  border-radius: 5px;
+}
+
+td.cal-current-month,
+td.cal-current-year {
+  border-radius: 5px;
+}
+
+.cal-date-in-range {
+  opacity: 0.7;
+  background-color: var(--maincolor);
+}
+
+.cal-start,
+.cal-end {
+  background-color: var(--maincolor);
+  color: #fff;
+  border-radius: 5px;
+  /* border: 1px solid var(--maincolor); */
+}
+
+.cal-start {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.cal-end {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate {
+  margin: auto;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+.comment{
+  padding: 1px;
+  margin-top: -12px;
+  font-size: 23px;
+
+}
